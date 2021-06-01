@@ -5,10 +5,10 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    # Container docker
-    url: jdbc:postgresql://172.17.0.2:5432/postgres
-    username: postgres
-    password: 123456
+    # Heroku
+    url: postgres://veufnxxpdxqenu:3c6355e8ffbf79ebce43de6e29f68ca15b7def9005af4e3a0a28279a7beb34a3@ec2-34-202-54-225.compute-1.amazonaws.com:5432/d41ojqeqae8s5n
+    username: veufnxxpdxqenu
+    password: 3c6355e8ffbf79ebce43de6e29f68ca15b7def9005af4e3a0a28279a7beb34a3
 
   jpa:
     show-sql: true
