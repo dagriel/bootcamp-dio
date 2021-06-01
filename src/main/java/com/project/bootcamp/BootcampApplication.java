@@ -19,7 +19,7 @@ public class BootcampApplication {
 	public OpenAPI customOpenAPI(@Value("${application.description}") String description, @Value("${application.version}") String version) {
 		return new OpenAPI().info(new Info()
 						.title(description)
-						.version("1.0")
+						.version(version)
 						.termsOfService("http://swagger.io/terms")
 						.license(new License()
 								.name("Apache 2.0")
